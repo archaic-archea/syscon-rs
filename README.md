@@ -9,4 +9,4 @@ Relies on `log` and `fdt` crates
     syscon_rs::init(devicetree_ptr);
     
     syscon_rs::power_off().expect("Failed to power off");
-}```
+}
