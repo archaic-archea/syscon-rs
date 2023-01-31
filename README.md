@@ -10,5 +10,3 @@ Relies on `log` and `fdt` crates
     
     syscon_rs::power_off().expect("Failed to power off");
 }```
-
-`power_off` can be switched for `reboot` depending on needs.
