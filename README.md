@@ -10,11 +10,5 @@ Relies on `log` and `fdt` crates
     
     syscon_rs::power_off().expect("Failed to power off");
 }```
-Or
-```extern "C" fn kmain(_hartid: u64, devicetree_ptr: *const u8) {
-    // Initialize logger
-    
-    syscon_rs::init(devicetree_ptr);
-    
-    syscon_rs::reboot().expect("Failed to reboot");
-}```
+
+`power_off` can be switched for `reboot` depending on needs.
