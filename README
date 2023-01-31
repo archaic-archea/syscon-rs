@@ -1,0 +1,9 @@
+# Syscon-rs
+A basic syscon-poweroff and syscon-reboot driver
+Relies on `log` and `fdt` crates
+
+# Usage
+```fn kmain() {
+    // Get devicetree pointer(can be found)
+    // Initialize logger
+}```
