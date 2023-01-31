@@ -2,7 +2,7 @@
 name = "syscon-rs"
 version = "0.1.0"
 edition = "2021"
-license = "Mozilla Public License 2.0"
+license = "MPL-2.0"
 description = "A driver for syscon poweroff, and reboot in rust"
 repository = "https://github.com/archaic-archea/syscon-rs"
 
