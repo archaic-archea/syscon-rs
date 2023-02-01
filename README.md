@@ -1,6 +1,6 @@
 # Syscon-rs
-A basic syscon-poweroff and syscon-reboot driver
-Relies on `log` and `fdt` crates
+A basic syscon-poweroff and syscon-reboot driver.
+Relies on `log` and `fdt` crates.
 
 # Usage
 ```
