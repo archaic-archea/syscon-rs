@@ -1,5 +1,6 @@
 #![no_std]
 #![feature(pointer_byte_offsets)]
+#![feature(never_type)]
 
 use log::{log, Level};
 
@@ -11,7 +12,7 @@ pub fn init(fdt: *const u8) {
     }
 }
 
-pub fn power_off() ->  Option<()> {
+pub fn power_off() ->  Option<!> {
     let fdt = unsafe {fdt::Fdt::from_ptr(FDT).unwrap()};
     
     let poweroff_node = fdt.find_compatible(&["syscon-poweroff"])?;
@@ -25,10 +26,10 @@ pub fn power_off() ->  Option<()> {
         syscon_mmio.byte_add(offset).write_volatile(value);
     }
 
-    Some(())
+    unreachable!()
 }
 
-pub fn reboot() ->  Option<()> {
+pub fn reboot() ->  Option<!> {
     let fdt = unsafe {fdt::Fdt::from_ptr(FDT).unwrap()};
     
     let reboot = fdt.find_compatible(&["syscon-reboot"])?;
@@ -42,5 +43,5 @@ pub fn reboot() ->  Option<()> {
         syscon_mmio.byte_add(offset).write_volatile(value);
     }
 
-    Some(())
+    unreachable!()
 }
