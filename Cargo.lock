@@ -31,7 +31,7 @@ checksum = "ee857bfd0b37394f3507d78ee7bd4b712a2179a2ce50e47d36bbb481672f5408"
 
 [[package]]
 name = "syscon-rs"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "fdt",
  "log",
