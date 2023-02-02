@@ -11,3 +11,4 @@ repository = "https://github.com/archaic-archea/syscon-rs"
 [dependencies]
 fdt = "0.1.4"
 log = "0.4"
+mmio = "2.1.0"

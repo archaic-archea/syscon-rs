@@ -24,9 +24,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "mmio"
+version = "2.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ee857bfd0b37394f3507d78ee7bd4b712a2179a2ce50e47d36bbb481672f5408"
+
+[[package]]
 name = "syscon-rs"
 version = "0.1.0"
 dependencies = [
  "fdt",
  "log",
+ "mmio",
 ]
